@@ -31,8 +31,6 @@
 3. **安全接管機制 (Fallback Engine)**
 * 當 AI 產出的程式碼無法通過 AST 解析或黑名單驗證時，系統會自動觸發內建的標準 Autodesk.Revit.DB 官方 API 備用流程，確保使用者端執行零中斷。
 
-
-
 ---
 
 ## 安裝與設定說明
@@ -43,6 +41,7 @@
 * pyRevit 外掛套件平台
 * Python 3.x 環境（pyRevit 執行環境）
 * Ollama / Local LLM Endpoint 或遠端 LLM API (例如 OpenAI API)
+* 本專案使用 Llama3 來開發，可自行更換模型及對應程式碼
 
 ### 2. 部署 pyRevit PushButton
 
