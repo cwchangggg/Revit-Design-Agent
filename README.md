@@ -1,5 +1,4 @@
 # Revit-Design-Agent
-# Revit + MCP + LLM 整合架構說明文件 (README)
 
 本專案旨在建構一個連結 Autodesk Revit、模型上下文協定 (Model Context Protocol, MCP) 與大型語言模型 (LLM) 的自動化開發環境。透過標準化的通訊協定，將自然語言指令轉化為合規且精確的 Revit API 操作，解決小型 LLM 易產生 API 語法幻覺 (Hallucination) 與執行期錯誤的問題。
 
