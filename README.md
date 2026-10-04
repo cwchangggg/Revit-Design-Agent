@@ -2,6 +2,8 @@
 
 本專案旨在建構一個連結 Autodesk Revit、模型上下文協定 (Model Context Protocol, MCP) 與大型語言模型 (LLM) 的自動化開發環境。透過標準化的通訊協定，將自然語言指令轉化為合規且精確的 Revit API 操作，解決小型 LLM 易產生 API 語法幻覺 (Hallucination) 與執行期錯誤的問題。
 
+<img width="644" height="364" alt="螢幕擷取畫面 2026-10-03 230855" src="https://github.com/user-attachments/assets/5037d090-2ea7-424f-8a9a-acf49c3a3af0" />
+
 ---
 
 ## 專案核心架構
@@ -37,11 +39,11 @@
 
 ### 1. 前置需求
 
-* Autodesk Revit 2023 或更新版本
-* pyRevit 外掛套件平台
+* Autodesk Revit 2026 或更新版本
+* 安裝 pyRevit 套件
 * Python 3.x 環境（pyRevit 執行環境）
 * Ollama / Local LLM Endpoint 或遠端 LLM API (例如 OpenAI API)
-* 本專案使用 Llama3 來開發，可自行更換模型及對應程式碼
+* 本專案 LLM 使用 Llama3，可自行更換模型及對應程式碼
 
 ### 2. 部署 pyRevit PushButton
 
@@ -82,7 +84,7 @@ MyTools.extension/
 * 注入作用域變數 (`doc`, `uidoc`, `level`, `levelId`, `DB`, `smart_get_family_symbol`)。
 * 於 Transaction 事務內執行語法並更新視圖 (`RefreshActiveView`)。
 
-
+5. **Agent 自動產生建築模型並顯示在畫面**
 
 ---
 
