@@ -66,7 +66,7 @@ MyTools.extension/
 
 ### 4. 執行程式
 
-請確保路徑配置正確，可修改程式碼中的檔案路徑。Revit 成功載入此程式後會出現在 pyRevit Tab 中，MCP Server 須同時在背景執行，點擊 AI 圖標即可執行。
+請確保路徑配置正確，可修改程式碼中的檔案路徑。Revit 成功載入此程式後會出現在 pyRevit Tab 中，MCP Server 須同時在背景執行，點擊 AI 圖標(LaunchUI)即可執行。
 
 ---
 
