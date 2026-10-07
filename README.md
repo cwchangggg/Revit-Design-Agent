@@ -62,7 +62,7 @@ MyTools.extension/
 
 ### 3. MCP 連接埠設定
 
-請自行部署 LLM 並修改對應 Modelfile 。若使用 MCP Server 模式，請確保本地 MCP 協定服務器監聽埠號（預設為 HTTP / JSON-RPC 或 WebSocket）配置正確，並在 `script.py` 中設定對應 Endpoint。
+請自行部署 LLM 並修改對應 Modelfile ，相關路徑必須配置正確。若使用 MCP Server 模式，請確保本地 MCP 協定服務器監聽埠號（預設為 HTTP / JSON-RPC 或 WebSocket）配置正確，並在 `script.py` 中設定對應 Endpoint。
 
 ### 4. 執行程式
 
