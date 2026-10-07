@@ -1,6 +1,6 @@
 # Revit-Design-Agent
 
-本專案旨在建構一個連結 Autodesk Revit、模型上下文協定 (Model Context Protocol, MCP) 與大型語言模型 (LLM) 的自動化開發環境。透過標準化的通訊協定，將自然語言指令轉化為合規且精確的 Revit API 操作，解決小型 LLM 易產生 API 語法幻覺 (Hallucination) 與執行期錯誤的問題。
+本專案旨在建構一個連結 Autodesk Revit、模型上下文協定 (Model Context Protocol, MCP) 與大型語言模型 (LLM) 的自動化開發環境。透過標準化的通訊協定，將自然語言指令轉化為合規且精確的 Revit API 操作，解決 LLM 易產生 API 語法幻覺 (Hallucination) 的問題。
 
 <img width="644" height="364" alt="螢幕擷取畫面 2026-10-03 230855" src="https://github.com/user-attachments/assets/5037d090-2ea7-424f-8a9a-acf49c3a3af0" />
 
@@ -18,7 +18,7 @@
 
 ## 系統核心防護機制
 
-針對小型語言模型（如 `revit-base-coder` 或在地化模型）常出現語法亂寫、虛構 API (例如 `doc.FamilyInstance.Create`、`SetPosition`) 或夾帶非程式碼說明 (如 `Note:...`) 等問題，內建以下三重防護：
+針對語言模型常出現語法亂寫、虛構 API (例如 `doc.FamilyInstance.Create`、`SetPosition`) 或夾帶非程式碼說明 (如 `Note:...`) 等問題，內建以下三重防護：
 
 1. **語法編譯預審 (AST Compiler Gate)**
 * 執行前透過 Python 原生 `ast.parse()` 解析生成的程式碼。
@@ -62,7 +62,7 @@ MyTools.extension/
 
 ### 3. MCP 連接埠設定
 
-請自行部署 LLM 並修改對應 Modelfile ，相關路徑必須配置正確。若使用 MCP Server 模式，請確保本地 MCP 協定服務器監聽埠號（預設為 HTTP / JSON-RPC 或 WebSocket）配置正確，並在 `script.py` 中設定對應 Endpoint。
+請自行部署 LLM 並使用提供的 Modelfile 編譯 System Prompt，相關路徑必須配置正確。啟動 MCP Server 請執行 revit_mcp_server.py ，請確保本地 MCP 協定服務器監聽埠號（預設為 HTTP / JSON-RPC 或 WebSocket）配置正確，並在 `script.py` 中設定對應 Endpoint。
 
 ### 4. 執行程式
 
