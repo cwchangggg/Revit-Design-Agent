@@ -66,7 +66,9 @@ MyTools.extension/
 
 ### 4. 執行程式
 
-請確保路徑配置正確，可修改程式碼中的檔案路徑。Revit 成功載入此程式後會出現在 pyRevit Tab 中，MCP Server 須同時在背景執行，點擊 AI 圖標(LaunchUI)即可執行。
+請確保路徑配置正確，可修改程式碼中的檔案路徑。Revit 成功載入此程式後會出現在 pyRevit Tab 中，MCP Server 須同時在背景執行，點擊 AI 圖標(LaunchUI)即可彈出輸入框，輸入範例：設計一個帶儲藏室的咖啡廳，靠牆壁放置一排椅子。送出後 AI 會在 Revit 中直接生成設計。
+
+<img width="644" height="364" alt="螢幕擷取畫面 2026-10-03 230855" src="https://github.com/user-attachments/assets/5037d090-2ea7-424f-8a9a-acf49c3a3af0" />
 
 ---
 
